@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      .detailDiv {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        text-align: center;
+        font-weight: bold;
+        font-size: x-large;
+        color: black;
+        background-color:pink;
+      }
+
+      .detailDiv > div {
+        border: 2px solid black ;
+        height: 15rem;
+      }
+      .fourDivSection {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        font-weight: bold;
+        font-size: x-large;
+        color: black;
+        background-color: orange;
+      }
+      .fourDivSection > div {
+        border: 2px solid black;
+        height: 10rem;
+      }
+      .map{
+        border: 2px solid white;
+        height: 20rem;
+        text-align: center;
+        font-size: x-large;
+        font-weight: bold;
+        background-color:pink;
+        color: black;
+      }
+
+      @media only screen and (min-width: 70px) and (max-width: 420px){
+        .detailDiv {
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .fourDivSection{
+            display: grid;
+            grid-template-columns: repeat(1,1fr);
+        }
+        .map{
+            display: none;
+        }
+      }
+      @media only screen and (min-width: 421px) and (max-width: 780px){
+        .fourDivSection{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+        }
+      }
+    </style>
+    <title>Assignment</title>
+  </head>
+  <body>
+    <div>
+      <div class="detailDiv">
+        <div class="leftImgDiv">
+          <p>Stimulus</p>
+        </div>
+        <div class="rightNavDiv">
+          <p>Navbar section</p>
+        </div>
+      </div>
+      <div class="detailDiv">
+        <div>
+          <p>Donac auctor</p>
+        </div>
+        <div>
+          <p>My Skill section</p>
+        </div>
+      </div>
+      <div class="fourDivSection">
+        <div> Interface Design</div>
+        <div>Media Strategy</div>
+        <div>Mobile App</div>
+        <div>Coding</div>
+      </div>
+      <div class="detailDiv">
+        <div>
+          <p>image</p>
+        </div>
+        <div>
+          <p>My Expereince</p>
+        </div>
+        <div>
+          <p>My Education</p>
+        </div>
+        <div>
+          <p>Image</p>
+        </div>
+      </div>
+      <div class="detailDiv">
+        <div>
+          <p>Say Hello</p>
+        </div>
+        <div>
+          <p>Visit my Profile</p>
+        </div>
+      </div>
+      <div class="map">
+        <p>Map</p>
+      </div>
+    </div>
+  </body>
+</html>
